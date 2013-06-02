@@ -1,6 +1,6 @@
 <?php
 /**
- * Comment Management Screen
+ * Comment Management Screen. more meaningless comments.
  *
  * @package WordPress
  * @subpackage Administration
