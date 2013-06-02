@@ -1,6 +1,6 @@
 <?php
 /**
- * Credits administration panel. this time to a credits admin panel.
+ * Credits administration panel. this time to a credits admin panel. more.
  *
  * @package WordPress
  * @subpackage Administration
