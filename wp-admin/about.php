@@ -1,6 +1,6 @@
 <?php
 /**
- * About This Version administration panel.
+ * About This Version administration panel. Changed. Again.
  *
  * @package WordPress
  * @subpackage Administration
