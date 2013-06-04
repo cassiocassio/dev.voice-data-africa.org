@@ -466,32 +466,29 @@ table {
   border-spacing: 0; }
 
 html {
-  background-color: pink; }
+  background-color: white; }
 
 body {
-  color: #6c6c6c;
-  font-family: Helvetica; }
-
-p, ul {
-  font-size: 0.8em; }
+  color: #222222;
+  font-family: "Helvetica"; }
 
 h1 {
-  font-family: Rockwell;
+  font-family: "Rockwell";
   font-style: normal;
   font-weight: 600;
   font-size: 1em;
-  color: red; }
+  color: #e10202; }
 
 h2 {
-  font-family: Rockwell;
-  font-size: 1.2em;
+  font-family: "Rockwell";
+  font-size: 1.33em;
   font-weight: 100;
   color: black; }
 
 h3 {
-  font-family: Helvetica;
+  font-family: "Helvetica";
   font-size: 0.75em;
-  color: red; }
+  color: #e10202; }
 
 img.fullwidth {
   width: 100%; }
@@ -499,23 +496,48 @@ img.fullwidth {
 a {
   text-decoration: none; }
 
+p {
+  font-size: 0.75em;
+  color: #444444; }
+
+.keywords {
+  margin: 0;
+  padding: 0;
+  right: 24px;
+  bottom: -12px;
+  list-style: none; }
+
+.keywords li, keywords a {
+  display: inline-block;
+  font-size: 0.9em;
+  color: #09ab70;
+  border: 1px solid #09ab70;
+  height: 1em;
+  line-height: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em; }
+
 header {
   display: block;
-  float: left; }
+  float: left;
+  margin-top: 4px;
+  margin-left: 4px; }
 
 header h1 {
   text-indent: -5000px;
-  background: url(img/vda-logo@2x.png) no-repeat;
-  position: absolute;
-  margin-top: 0px;
-  margin-left: 0px; }
+  background: url("../img/vda-logo@2x.png") no-repeat;
+  background-size: 225px 58px;
+  width: 225px;
+  height: 58px; }
 
 header h2 {
-  font-size: 1.0em; }
+  font-family: "Helvetica";
+  font-size: x-small;
+  color: black; }
 
 #credit-author {
   float: right;
   font-size: x-small;
-  color: grey;
+  color: #444444;
   border-bottom-width: 4px;
   border-bottom-color: yellow; }

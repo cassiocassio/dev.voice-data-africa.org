@@ -1,57 +1,91 @@
 html { background-color: $paper }
 
-body {	color: #6c6c6c;
-		font-family: Helvetica;
+body {	color: $ink;
+		font-family: $sans;
 }
 
-p, ul	{	font-size: 0.8em;}
 
-h1 {	font-family: Rockwell;
+h1 {	font-family: $serif;
 		font-style: normal;
 		font-weight: 600;
 		font-size: 1em;
-		color: red;
+		color: $hot;
 		}
 
 
 
-h2 {	font-family: Rockwell;
-		font-size: 1.2em;
+h2 {	font-family: $serif;
+		font-size: 1.33em;
 		font-weight: 100;
 		color: black;
 		}
 
-h3 {	font-family: Helvetica;
+h3 {	font-family: $sans;
 		font-size: 0.75em;
-		color: red;
+		color: $hot;
 		}
 
 img.fullwidth {width: 100%;}
 
 a {text-decoration: none;}
 
+p { font-size: 0.75em;
+	color: $ink-weak;
+}
+
+
+.keywords { 
+			margin:0;
+			padding:0;
+			right:24px;
+			bottom:-12px;
+			list-style:none;
+}
+
+
+.keywords li, keywords a
+			  {	
+			  	display: inline-block;
+			  	font-size:0.9em;
+			 	color: $cool;
+			 	border: 1px solid $cool;
+			 	height:1em;
+			 	line-height:1em;
+			 	padding-left: 0.5em;
+			 	padding-right: 0.5em;
+}
+
+
+
+
 
 header { display: block;
 		float: left;
+		margin-top: 4px;
+		margin-left: 4px;
+
 }
 
 header h1 {
-	text-indent: -5000px;
-	background: url( img/vda-logo@2x.png ) no-repeat;
-	position: absolute;
-	margin-top: 0px;
-	margin-left: 0px;
+		text-indent: -5000px;
+		background: url( '../img/vda-logo@2x.png' ) no-repeat;
+		background-size: 225px 58px;  // downsample for retina from hi-dpi asset
+		width: 225px;
+		height: 58px;
 }
 
 
 header h2
-	{	font-size: 1.0em; }
+	{	font-family: $sans;
+		font-size: x-small;
+		color: $ink-strong;
+}
 
 #credit-author
 	{	 
 		float: right;
 		font-size: x-small;  
-		color: grey;
+		color: $ink-weak;
 		border-bottom-width: 4px;
 		border-bottom-color: yellow;
 }

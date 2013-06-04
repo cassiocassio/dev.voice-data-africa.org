@@ -8,13 +8,11 @@
 <html class=“no-js”>
 
 <head>
-
-
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-
+    
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <link rel="stylesheet" href="css/style.css">
@@ -33,13 +31,10 @@
 
 <header>
 	<h1>Voice, Data: Africa</h1>
-	<img alt="vda-logo@2x" width="225" height="58">
 	<h2>Photographs of a technology explosion</h2>
 </header>
 
 <section id="credit-author">A project by Martin Storey</section>
-
-
 
 <nav>
 </nav>
@@ -49,16 +44,18 @@
 	<h2>Beach Party</h2>
 	<h3>Selling Safaricom</h3>
 	<p>On the beach at Diani, Mombassa, during the shooting of a Safaricom video.</p>
-	<b class="keywords">Kenya</b>
-	<b class="keywords">Networks</b>
-	<b class="keywords">Advertising</b>	
+	<ul class="keywords">
+		<li class="keywords"><a href="#">Kenya</a></li>
+		<li class="keywords"><a href="#">Networks</a></li>
+		<li class="keywords"><a href="#">Advertising</a></li>
+	</ul>	
 </section>
 
 <hr>
 
 <section id="featured-photostories">
 	<h1>Photostories</h1>
-	
+		
 	<ul>
 		<li>
 			<h3>Teledensity explosion</h3>
@@ -66,6 +63,8 @@
 			<img src="img/thumb-placeholder.png" alt="thumb-placeholder" width="230" height="154">
 			<p>Simeon Oriko supporting the next generation of mobile developers.</p>
 		</li>
+		
+		
 		<li>
 			<h3>Outdoor branding</h3>
 			<h2>Red & blue & yellow </h2>
