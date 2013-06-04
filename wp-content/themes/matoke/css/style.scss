@@ -1,35 +1,27 @@
-body {	color: #6c6c6c;
-		font-family: Helvetica;
-}
-
-h1 {	font-family: Rockwell;
-		font-style: normal;
-		font-weight: 600;
-		font-size: 1em;
-		color: red;
-		}
-
-
-
-h2 {	font-family: Rockwell;
-		font-size: 1.2em;
-		font-weight: 100;
-		color: black;
-		}
-
-h3 {	font-family: Helvetica;
-		font-size: 0.8em;
-		color: red;
-		}
-
-
-
-a {text-decoration: none;}
+/*   
+Theme Name: matoke
+Theme URI: http://www.voice-data-africa.com/theme
+Description: for the VDA redesign.
+Author: Martin Storey, thanks to Sam Parkinson's tutorial
+Author URI: http://martinstorey.com
+Version: 1.0
+.
+General comments/License Statement: have at it, like I care.
+.
+*/
 
 
 
 
+// reset 
+@import "boilerplater-normalize";
+// @import "boilerplate-main";
 
 
+// variables
+@import "base";
 
 
+// voice data africa matoke theme
+@import "grid";
+@import "typography"

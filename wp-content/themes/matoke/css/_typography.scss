@@ -1,0 +1,62 @@
+html { background-color: $paper }
+
+body {	color: #6c6c6c;
+		font-family: Helvetica;
+}
+
+p, ul	{	font-size: 0.8em;}
+
+h1 {	font-family: Rockwell;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 1em;
+		color: red;
+		}
+
+
+
+h2 {	font-family: Rockwell;
+		font-size: 1.2em;
+		font-weight: 100;
+		color: black;
+		}
+
+h3 {	font-family: Helvetica;
+		font-size: 0.75em;
+		color: red;
+		}
+
+img.fullwidth {width: 100%;}
+
+a {text-decoration: none;}
+
+
+header { display: block;
+		float: left;
+}
+
+header h1 {
+	text-indent: -5000px;
+	background: url( img/vda-logo@2x.png ) no-repeat;
+	position: absolute;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+
+header h2
+	{	font-size: 1.0em; }
+
+#credit-author
+	{	 
+		float: right;
+		font-size: x-small;  
+		color: grey;
+		border-bottom-width: 4px;
+		border-bottom-color: yellow;
+}
+
+
+
+
+

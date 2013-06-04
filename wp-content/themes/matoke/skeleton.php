@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<html class=“no-js”>
 
 <head>
-	<meta charset="UTF-8">
-    <script src="js/file.js"></script>  
+
+
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
     <link rel="stylesheet" href="css/style.css">
+
+<!--     <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
+
 </head>
 
 
@@ -17,16 +33,19 @@
 
 <header>
 	<h1>Voice, Data: Africa</h1>
-	<img src="img/vda-logo@2x.png" alt="vda-logo@2x" width="225" height="58">
+	<img alt="vda-logo@2x" width="225" height="58">
 	<h2>Photographs of a technology explosion</h2>
-	<p>A project by Martin Storey</p>
 </header>
+
+<section id="credit-author">A project by Martin Storey</section>
+
+
 
 <nav>
 </nav>
 
 <section id="lead-story">
-	<img src="img/lead_story_photo.jpg" alt="lead_story_photo" width="960" height="641">
+	<img src="img/lead_story_photo.jpg" class="fullwidth" alt="lead_story_photo">
 	<h2>Beach Party</h2>
 	<h3>Selling Safaricom</h3>
 	<p>On the beach at Diani, Mombassa, during the shooting of a Safaricom video.</p>
@@ -178,6 +197,13 @@
 
 </footer>
 
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
 
 </body>
 
