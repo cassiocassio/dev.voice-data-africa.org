@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
     <script src="js/file.js"></script>  
-    <link rel="stylesheet" href="css/file.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 
