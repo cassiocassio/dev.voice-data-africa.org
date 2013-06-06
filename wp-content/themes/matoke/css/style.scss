@@ -10,18 +10,25 @@ General comments/License Statement: have at it, like I care.
 .
 */
 
+// reset the browsers to a baseline
 
-
-
-// reset 
 @import "boilerplater-normalize";
+
 // @import "boilerplate-main";
+// LOTS OF JUNK IN HERE CAN PROBABLY LIVE WITHOUT SO DISABLED
 
-
-// variables
+// variables for colour and stuff
 @import "base";
 
+// voice data africa matoke theme styles
+@import "typography";
 
-// voice data africa matoke theme
-@import "grid";
-@import "typography"
+// contains the layouts and mediaqueries for each of the screensizes
+
+@import "layout-phone";
+@import "layout-tablet";
+// @import "layout-bigscreen";
+@import "layout-supersize";
+
+
+

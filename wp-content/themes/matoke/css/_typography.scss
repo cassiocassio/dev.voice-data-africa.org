@@ -1,96 +1,171 @@
-html { background-color: $paper }
+html {
+	background-color: $desk;
+	}
+	
+#content-frame {
+	background-color: $paper;
+	border: 1px solid $ink-weakest;
+	width: 96%;
+	margin: 0 auto;
+	overflow: hidden;
+    -webkit-box-shadow:  2px 2px 3px #77777; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+    box-shadow:  2px 2px 3px #77777; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
 
-body {	color: $ink;
-		font-family: $sans;
 }
 
-
-h1 {	font-family: $serif;
-		font-style: normal;
-		font-weight: 600;
-		font-size: 1em;
-		color: $hot;
-		}
+body {
+	color: $ink;
+	font-family: $sans;
+	}
 
 
+h1 {
+	font-family: $serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1em;
+	color: $hot;
+	margin: 0em;
+	}
 
-h2 {	font-family: $serif;
-		font-size: 1.33em;
-		font-weight: 100;
-		color: black;
-		}
 
-h3 {	font-family: $sans;
-		font-size: 0.75em;
-		color: $hot;
-		}
+
+h2, dt {
+	font-family: $serif;
+	font-size: 1.33em;
+	font-weight: 100;
+	color: $ink-strong;
+	margin: 0em;
+	}
+
+h3, a dd {
+	font-family: $sans;
+	font-size: 0.70em;
+	font-weight: bold;
+	margin: 0 0 0.5em 0; 
+	color: $hot;
+	}
+	
+	
+h4 {
+	font-family: sans-serif;
+	font-size: 0.70em;
+	color: $ink-strong;
+}
 
 img.fullwidth {width: 100%;}
 
 a {text-decoration: none;}
 
-p { font-size: 0.75em;
+a:link 		{color:$cool;}      	
+a:visited 	{color:lighten($cool, 10%)}  		
+a:hover 	{color:darken($cool, 10%)}  	
+
+a:active 	{
+			background: $cool;
+			color: $paper;
+			}  		
+
+a:link dd 		{color: $hot;}
+a:visited dd 	{color:lighten($hot, 10%)}
+a:hover dd 		{color: darken($hot, 10%)}
+a:active dd		{
+				background: $hot;
+				color: $paper;
+				}  		
+
+
+p, dd 	{
+	font-size: 0.75em;
+	margin: 0 0 0.5em 0; 
 	color: $ink-weak;
-}
+	}
 
 
 .keywords { 
-			margin:0;
-			padding:0;
-			right:24px;
-			bottom:-12px;
-			list-style:none;
-}
+/* 	border: 1px dotted $debug; */
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
 
 
-.keywords li, keywords a
-			  {	
-			  	display: inline-block;
-			  	font-size:0.9em;
-			 	color: $cool;
-			 	border: 1px solid $cool;
-			 	height:1em;
-			 	line-height:1em;
-			 	padding-left: 0.5em;
-			 	padding-right: 0.5em;
-}
+.keywords li, keywords a {	
+  	display: inline;
+  	font-size:0.7em;
+ 	color: $cool;
+ 	background-color: lighten($cool, 63%);
+ 	border: 1px solid fade-out($cool, 0.7);
+ 	border-radius: 3px;
+ 	line-height:2.5em;
+ 	padding: 0.35em 0.45em;
+ 	margin: 0.25em 0.5em 0.25em 0em;
+ 	white-space: nowrap;
+ 	}
 
 
-
-
-
-header { display: block;
-		float: left;
-		margin-top: 4px;
-		margin-left: 4px;
-
-}
+header {
+	display: block;
+	float: left;
+	margin-top: 4px;
+/* 	margin-left: 4px; */
+	}
 
 header h1 {
-		text-indent: -5000px;
-		background: url( '../img/vda-logo@2x.png' ) no-repeat;
-		background-size: 225px 58px;  // downsample for retina from hi-dpi asset
-		width: 225px;
-		height: 58px;
+	text-indent: -5000px;
+	background: url( '../img/vda-logo@2x.png' ) no-repeat;
+	background-size: 225px 58px;  // downsample for retina from hi-dpi asset
+	width: 225px;
+	height: 58px;
+	}
+
+
+header h2 {
+	font-family: $sans;
+	font-size: x-small;
+	color: $ink-strong;
+	}
+
+#credit-author {	 
+	float: right;
+	font-size: x-small;  
+	color: $ink-weak;
+	border-bottom-width: 4px;
+	border-bottom-color: yellow;
+	}
+
+dt {
+	font-weight: 400;
+	font-size: 0.9em;
+}
+
+small, time {
+	font-family: $sans;
+	font-size: 0.7em;
+	color: $ink-weakest;
+	margin: 0;
+}
+
+.elsewhere-item time {
+	float: right;
 }
 
 
-header h2
-	{	font-family: $sans;
-		font-size: x-small;
-		color: $ink-strong;
+.elsewhere-item {
+	display: inline-block;
+	vertical-align: top;
 }
 
-#credit-author
-	{	 
-		float: right;
-		font-size: x-small;  
-		color: $ink-weak;
-		border-bottom-width: 4px;
-		border-bottom-color: yellow;
+footer {
+		background-color: yellow;
+		overflow:hidden;
 }
 
 
+footer h1 {
+		font-size: 0.7em;
+		margin-top: 1em;
+		margin-bottom: 0.25em;
 
-
+}
 

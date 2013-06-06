@@ -1,11 +1,16 @@
-$paper: white;
+$paper: white;  			// the page
+$desk: #ccc;						// what it sits on
 
-$ink: 			#222;		// nearly black
+$ink: 			#333;		// nearly black
 $ink-strong:	#000;		// actually black
-$ink-weak:		#444;		// pale grey
+$ink-weak:		#666;		// pale grey
+$ink-weakest: lighten($ink-weak, 33%);
+
 $hot:			#e10202; 	// dark red
 $cool:			#09ab70;	// funky green
+
 
 $serif: 'Rockwell'; 
 $sans:  'Helvetica';
 
+$debug: pink;  // normally hidden, use to reveal box model borders for debug

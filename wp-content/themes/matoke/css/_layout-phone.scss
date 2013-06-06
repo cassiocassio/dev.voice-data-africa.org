@@ -1,0 +1,28 @@
+// SMALL SCREEN FOR PHONE STACKED SINGLE COLUMN FULL WIDTH LAYOUT WITH EXTRA SPACING FOR 
+
+
+// very skinny left and right margins and padding on the phone
+#content-frame {
+	padding-left: 0.25em;
+	padding-right: 0.25em;
+}
+
+
+// big top margin for mobile when stacked to separate photostory intros
+#featured-photostories h3 {
+	margin: 3em 0 0.5em 0;  }
+
+
+// make the thumbnails full width when stacked on the small screen
+#featured-photostories img {
+	width: 100%;
+}
+
+
+// make the thumbnails full width and bump the margin to separate the linked list items
+#elsewhere section {
+	width: 100%;
+	margin: 1em 0 0 0;
+}
+
+
