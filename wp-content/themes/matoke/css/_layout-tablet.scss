@@ -1,0 +1,66 @@
+// 'TABLET' means stuff that happens above 768 ipad portrait and above
+ 
+ @media screen and (min-width:768px) {
+
+	html {
+		background-color: #dfeaf4; /* pale blue to show the tablet stylesheet is in action */
+		}
+
+#credit-author {	 
+	float: right;
+	padding-top: 20px;
+	padding-right: 20px;
+	}
+	
+// featured photostories grid wraps according to the number of stories	
+
+	
+#featured-photostories li {
+	display: inline-block;
+	vertical-align: top;
+	width: 230px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+
+#featured-photostories h3 {
+	height: 1em;
+	
+	}
+#featured-photostories h2 {
+	height: 1em;
+	vertical-align: baseline;
+	}
+	
+footer section {
+	width: 20%;
+	padding-right: 2.5%;
+	padding-left: 2.5%;
+	display: block;
+	float: left;
+	vertical-align: top;		
+}
+
+
+
+
+
+
+footer {
+	padding-bottom: 25px;
+}
+
+
+.elsewhere-item {
+	width: 20%;
+	padding-right: 2.5%;
+	padding-left: 2.5%;
+}
+
+
+
+
+
+
+// end rules for screens greater than 768
+}

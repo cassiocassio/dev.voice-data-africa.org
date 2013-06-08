@@ -1,28 +1,47 @@
 // SMALL SCREEN FOR PHONE STACKED SINGLE COLUMN FULL WIDTH LAYOUT WITH EXTRA SPACING FOR 
+ @media screen and (max-width:768px) {
+
+html {
+	background-color: $desk; /* rgba(247,217,248,0.96) pale pink to show the phone stylesheet is in action */
+	}
+
+// VERTICAL PADDING FOR PHONE
 
 
-// very skinny left and right margins and padding on the phone
-#content-frame {
-	padding-left: 0.25em;
-	padding-right: 0.25em;
+	// big top margin for mobile when stacked to separate photostory intros
+	#featured-photostories h3 {
+		margin: 3em 0 0.5em 0;  }
+	
+	
+	// make the thumbnails full width when stacked on the small screen
+	#featured-photostories img {
+		max-width: 100%;
+	}
+	
+
+// LAYOUT AND ARANGEMENT FOR PHONE
+	// fixed pixels left and right margins and padding on the phone
+	
+	header {
+		width: 225px; 
+	}
+	
+	#page-frame {
+		position: relative;
+		margin: 0 10px;
+		width: auto;
+	}
+
+	header, #lead-story-text, section#featured-photostories, section#explore, section#elsewhere, footer {
+		padding: 10px;
+	}
+
+	
+	// make the thumbnails full width and bump the margin to separate the linked list items
+	#elsewhere section {
+		width: 100%;
+		margin: 1em 0 0 0;
+	}
+
+/* end phones only media */
 }
-
-
-// big top margin for mobile when stacked to separate photostory intros
-#featured-photostories h3 {
-	margin: 3em 0 0.5em 0;  }
-
-
-// make the thumbnails full width when stacked on the small screen
-#featured-photostories img {
-	width: 100%;
-}
-
-
-// make the thumbnails full width and bump the margin to separate the linked list items
-#elsewhere section {
-	width: 100%;
-	margin: 1em 0 0 0;
-}
-
-

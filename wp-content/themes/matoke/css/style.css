@@ -440,10 +440,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* The basic canvas */
 html {
   background-color: #cccccc; }
 
-#content-frame {
+#page-frame {
   background-color: white;
   border: 1px solid #bababa;
   width: 96%;
@@ -458,6 +459,7 @@ body {
   color: #333333;
   font-family: "Helvetica"; }
 
+/* Essential typography */
 h1 {
   font-family: "Rockwell";
   font-style: normal;
@@ -485,9 +487,7 @@ h4 {
   font-size: 0.70em;
   color: black; }
 
-img.fullwidth {
-  width: 100%; }
-
+/* Links, generic */
 a {
   text-decoration: none; }
 
@@ -522,6 +522,49 @@ p, dd {
   margin: 0 0 0.5em 0;
   color: #666666; }
 
+/* Masthead */
+#masthead {
+  display: block;
+  float: left;
+  margin-bottom: 10px; }
+
+#credit-author {
+  font-size: 0.7em;
+  color: #666666;
+  padding-left: 0.2em; }
+
+/* pale grey lines above every main area */
+section#featured-photostories, section#explore, section#elsewhere, footer {
+  padding-top: 1em;
+  border-top: #bababa 1px dotted; }
+
+/* lead story is considered part of the header */
+header h1 {
+  text-indent: -5000px;
+  background: url("../img/vda-logo@2x.png") no-repeat;
+  background-size: 225px 58px;
+  width: 225px;
+  height: 58px; }
+
+header h2 {
+  background-color: yellow;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-left: 2px; }
+
+header h2 {
+  font-family: "Helvetica";
+  font-size: 0.70em;
+  color: black; }
+
+#lead-story img {
+  width: 100%; }
+
+/* images in general useful */
+img.fullwidth {
+  width: 100%; }
+
+/* keywords in losenges */
 .keywords {
   /* 	border: 1px dotted $debug; */
   margin: 0;
@@ -540,31 +583,6 @@ p, dd {
   margin: 0.25em 0.5em 0.25em 0em;
   white-space: nowrap; }
 
-header {
-  display: block;
-  float: left;
-  margin-top: 4px;
-  /* 	margin-left: 4px; */ }
-
-header h1 {
-  text-indent: -5000px;
-  background: url("../img/vda-logo@2x.png") no-repeat;
-  background-size: 225px 58px;
-  width: 225px;
-  height: 58px; }
-
-header h2 {
-  font-family: "Helvetica";
-  font-size: x-small;
-  color: black; }
-
-#credit-author {
-  float: right;
-  font-size: x-small;
-  color: #666666;
-  border-bottom-width: 4px;
-  border-bottom-color: yellow; }
-
 dt {
   font-weight: 400;
   font-size: 0.9em; }
@@ -574,6 +592,9 @@ small, time {
   font-size: 0.7em;
   color: #bababa;
   margin: 0; }
+
+#elsewhere {
+  background: #e9fef2; }
 
 .elsewhere-item time {
   float: right; }
@@ -591,16 +612,42 @@ footer h1 {
   margin-top: 1em;
   margin-bottom: 0.25em; }
 
-#content-frame {
-  padding-left: 0.25em;
-  padding-right: 0.25em; }
+@media screen and (min-width: 768px) {
+  html {
+    background-color: #dfeaf4;
+    /* pale blue to show the tablet stylesheet is in action */ }
 
-#featured-photostories h3 {
-  margin: 3em 0 0.5em 0; }
+  #credit-author {
+    float: right;
+    padding-top: 20px;
+    padding-right: 20px; }
 
-#featured-photostories img {
-  width: 100%; }
+  #featured-photostories li {
+    display: inline-block;
+    vertical-align: top;
+    width: 230px;
+    margin-right: 30px;
+    margin-bottom: 30px; }
 
-#elsewhere section {
-  width: 100%;
-  margin: 1em 0 0 0; }
+  #featured-photostories h3 {
+    height: 1em; }
+
+  #featured-photostories h2 {
+    height: 1em;
+    vertical-align: baseline; }
+
+  footer section {
+    width: 20%;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    display: block;
+    float: left;
+    vertical-align: top; }
+
+  footer {
+    padding-bottom: 25px; }
+
+  .elsewhere-item {
+    width: 20%;
+    padding-right: 2.5%;
+    padding-left: 2.5%; } }

@@ -1,5 +1,5 @@
 $paper: white;  			// the page
-$desk: #ccc;						// what it sits on
+$desk: #ccc;				// what it sits on
 
 $ink: 			#333;		// nearly black
 $ink-strong:	#000;		// actually black
@@ -12,5 +12,7 @@ $cool:			#09ab70;	// funky green
 
 $serif: 'Rockwell'; 
 $sans:  'Helvetica';
+
+$paper-elsewhere: #E9FEF2;  // very pale green behind elsewhere links
 
 $debug: pink;  // normally hidden, use to reveal box model borders for debug

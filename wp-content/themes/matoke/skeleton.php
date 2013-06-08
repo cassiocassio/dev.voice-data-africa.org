@@ -3,8 +3,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-
+<!--[if gt IE 8]><! --> <html class="no-js"> <!--<![endif]-->
 
 <head>
     <meta charset="utf-8">
@@ -29,32 +28,37 @@
     </script>
   <![endif]-->
 
-<div id="content-frame">
+<div id="page-frame">
 
 	<header>
-	<h1>Voice, Data: Africa</h1>
-	<h2>Photographs of a technology explosion</h2>
-</header>
-	
-	<section id="credit-author" itemscope itemtype="http://schema.org/Person">A project by <span itemprop="name">Martin Storey</span></section>
+		<p id="credit-author" itemscope itemtype="http://schema.org/Person">A project by <span itemprop="name"><a href="martinstorey.com">Martin Storey</a></p>
+
+		<div id="masthead">
+			<h1>Voice, Data: Africa</h1>
+			<h2>Photographs of the technology explosion</h2>
+		</div>
+	</header>
 	
 	<nav>
 	</nav>
 	
 	<section id="lead-story">
-		<img src="img/lead_story_photo.jpg" class="fullwidth" alt="lead_story_photo">
-		<h2>Beach Party</h2>
-		<h3>Selling Safaricom</h3>
-		<p>On the beach at Diani, Mombassa, during the shooting of a Safaricom video.</p>
-		<ul class="keywords">
-			<li class="keywords"><a href="#">Kenya</a></li>
-			<li class="keywords"><a href="#">Networks</a></li>
-			<li class="keywords"><a href="#">Advertising</a></li>
-		</ul>	
+			<img src="img/lead_story_photo.jpg" alt="lead_story_photo">
+				<div id="lead-story-text">
+					<h2>Beach Party</h2>
+					<h3>Selling Safaricom</h3>
+					<p>On the beach at Diani, Mombassa, during the shooting of a Safaricom video.</p>
+					<ul class="keywords">
+						<li class="keywords"><a href="#">Kenya</a></li>
+						<li class="keywords"><a href="#">Networks</a></li>
+						<li class="keywords"><a href="#">Advertising</a></li>
+					</ul>
+				</div>
 	</section>
 	
-	<hr>
 	
+	
+
 	<section id="featured-photostories">
 		<h1>Photostories</h1>
 			
@@ -140,9 +144,7 @@
 				</ul>
 		</div>
 	</section>
-	
-	<hr>
-	
+		
 	<section id="elsewhere">
 		<a href="#">
 			<h1>Elsewhere as sections</h1>
@@ -188,7 +190,7 @@
 				<dd>A lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activistsA lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activists.A lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activists..</dd>
 		</section>		
 		
-			<section class="elsewhere-item" style="background:yellow;">
+			<section class="elsewhere-item">
 				<time datetime="1905-11-13">13-Nov-2013</time>
 				<a href="#">
 					<dt>Radio silence in Congo</dt>
@@ -208,10 +210,7 @@
 			</section>	
 			
 	</section> <!-- end elsewhere -->
-	
-	
-	<hr>
-	
+		
 	<footer>
 	
 		<section id="colophon">
