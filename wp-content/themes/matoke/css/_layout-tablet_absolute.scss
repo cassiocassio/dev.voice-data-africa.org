@@ -15,13 +15,8 @@
 // featured photostories grid wraps according to the number of stories	
 
 
-// FIRST THING TO CONVERT TO PERCENT
-
-
-#featured-photostories ul, 
-#featured-photostories h1
- {
-	margin-left: 11.764705882353%;    // was 116 / 986  11.764705882353% now 58px equiv, half 5.88235%
+#featured-photostories ul {
+	margin-left: 58px; // was 116
 }
 
 	
@@ -39,8 +34,8 @@
 	margin-top: 0.5em;
 	height: 6em;
 	text-overflow: ellipsis;
-// 	overflow:hidden; 
-	// border:1px solid #000000;
+	overflow:hidden; 
+	//border:1px solid #000000;
 }
 
 

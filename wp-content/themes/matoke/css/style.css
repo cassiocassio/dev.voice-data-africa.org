@@ -447,7 +447,7 @@ html {
 #page-frame {
   background-color: white;
   border: 1px solid #bababa;
-  width: 96%;
+  width: 86%;
   margin: 0 auto;
   overflow: hidden;
   -webkit-box-shadow: 2px 2px 3px #77777;
@@ -622,19 +622,23 @@ footer h1 {
     padding-top: 20px;
     padding-right: 20px; }
 
+  #featured-photostories ul,
+  #featured-photostories h1 {
+    margin-left: 11.764705882353%; }
+
   #featured-photostories li {
     display: inline-block;
-    vertical-align: top;
-    width: 230px;
-    margin-right: 30px;
-    margin-bottom: 30px; }
-
-  #featured-photostories h3 {
-    height: 1em; }
+    vertical-align: bottom;
+    width: 228px;
+    margin-right: 58px; }
 
   #featured-photostories h2 {
-    height: 1em;
-    vertical-align: baseline; }
+    margin-bottom: 0.3em; }
+
+  #featured-photostories ul p {
+    margin-top: 0.5em;
+    height: 6em;
+    text-overflow: ellipsis; }
 
   footer section {
     width: 20%;

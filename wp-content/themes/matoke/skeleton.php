@@ -72,7 +72,7 @@
 			
 			
 			<li>
-				<h3>Outdoor branding</h3>
+				<h3>Outdoor branding this one is particularly long</h3>
 				<h2>Red & blue & yellow </h2>
 				<img src="img/thumb-placeholder.png" alt="thumb-placeholder" width="230" height="154">
 				<p>In the past, it was Soap Powder. Now, the mobile networks have painted a continent in their own unmistakable colours.</p>
@@ -81,7 +81,7 @@
 				<h3>Teledensity explosion</h3>
 				<h2>A mobile for everyone</h2>
 				<img src="img/thumb-placeholder.png" alt="thumb-placeholder" width="230" height="154">
-				<p>Simeon Oriko supporting the next generation of mobile developers.</p>
+				<p>Simeon Oriko supporting the next generation of mobile developers. Simeon Oriko supporting the next generation of mobile developers. Simeon Oriko supporting the next generation of mobile developers. </p>
 			</li>
 			<li>
 				<h3>Vodafone Ghana</h3>
@@ -91,7 +91,7 @@
 			</li>
 			<li>
 				<h3>iCow</h3>
-				<h2>Your calf's birthdate</h2>
+				<h2>Your calf's birthdate this one goes one a bit</h2>
 				<img src="img/thumb-placeholder.png" alt="thumb-placeholder" width="230" height="154">
 				<p>Prompts farmers on vital days of cows gestation period. Helps farmers find the nearest Vet and AI providers; collects and stores farmer milk and breeding records.</p>
 			</li>
