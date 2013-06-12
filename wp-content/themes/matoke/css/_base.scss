@@ -7,7 +7,7 @@ $ink-weak:		#666;		// pale grey
 $ink-weakest: lighten($ink-weak, 33%);
 
 $hot:			#e10202; 	// dark red
-$cool:			#09ab70;	// funky green
+$cool:			#159a51;	// funky green was 	#09ab70;
 
 
 $serif: 'Rockwell'; 
@@ -16,3 +16,23 @@ $sans:  'Helvetica';
 $paper-elsewhere: #E9FEF2;  // very pale green behind elsewhere links
 
 $debug: pink;  // normally hidden, use to reveal box model borders for debug
+	
+
+
+
+
+$margin-left-percent: 8.198707592892%;   //
+$content-width-percent: 88.852988691438%;   
+
+// was 88.852988691438
+
+
+$basic-grid-unit: 58px;
+
+$gutter: $basic-grid-unit;  				// gutter inherits, could change
+$half-gutter: $gutter/2;					// gutter made from half on left and half on right
+
+
+$image-width: 4*$basic-grid-unit;			// was 228 nice rhythum for iamges to gutters
+
+

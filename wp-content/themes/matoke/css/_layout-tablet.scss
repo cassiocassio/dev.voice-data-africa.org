@@ -1,6 +1,6 @@
 // 'TABLET' means stuff that happens above 768 ipad portrait and above
  
- @media screen and (min-width:768px) {
+@media screen and (min-width:768px) {
 
 	html {
 		background-color: #dfeaf4; /* pale blue to show the tablet stylesheet is in action */
@@ -8,8 +8,6 @@
 
 #credit-author {	 
 	float: right;
-	padding-top: 20px;
-	padding-right: 20px;
 	}
 	
 // featured photostories grid wraps according to the number of stories	
@@ -18,18 +16,73 @@
 // FIRST THING TO CONVERT TO PERCENT
 
 
-#featured-photostories ul, 
-#featured-photostories h1
- {
-	margin-left: 11.764705882353%;    // was 116 / 986  11.764705882353% now 58px equiv, half 5.88235%
+
+#masthead {
 }
 
+#lead-story img, #masthead  {
+	width: $content-width-percent;
+	margin-left: 3.125%;  // 8.198707592892% left margin for big image
+	padding-left: $half-gutter;
+}
+
+header p {
+	float: right;
+//	border: 1px black solid;
+	text-align: right;
+	// margin-right: 2.952%;	// aligns to right hand of big image.
+}
+
+#lead-story-text-group {
+	margin-top: 1em;
+	vertical-align: top;
+	padding-left: $image-width+$gutter+4; // 290=228+29+29 +4 FOUR EXTRA FOR SOME REASON
+	margin-left: 3.125%;    // now 1/2 of a 1/16th grid unit 
 	
-#featured-photostories li {
+	// was 5.88235%, was 116 / 986  11.764705882353% now 58px equiv, half 5.88235%
+}
+
+#lead-story-titles {
+	//  border: 1px purple solid;
+		float: left;
+		vertical-align: top;
+
+}
+
+#lead-story-titles h2, #lead-story-titles h3 {
+}
+
+section#featured-photostories ul, #featured-photostories li {
+	// border: 1px solid black;
+}
+
+#featured-photostories li, #explore {
+//	 border: 1px solid black;
+//	 background-color: pink;
+}
+
+#featured-photostories h1 {
+	margin-left: 3.125%;
+	padding-left: $half-gutter;
+}
+
+ #explore h1 {
+	margin-left: $half-gutter;}     /*  needs to match the li marginleft  */
+
+#featured-photostories ul, #explore, #elsewhere-container  
+ {
+	margin-left:  3.125%;    // was 5.88235
+	//as 116 / 986  11.764705882353% now 58px equiv, half 5.88235%
+}
+
+#featured-photostories li, #lead-story-titles, #lead-story-details  {
 	display: inline-block;
 	vertical-align: bottom;
-	width: 228px;
-	margin-right: 58px;
+	width: $image-width;
+	margin-left: $half-gutter;
+	margin-right: $half-gutter;  // was 58px on the right but now on both sides
+	margin-bottom: 1em;
+//	border: 1px grey solid;
 }
 #featured-photostories h2 {
 	margin-bottom: 0.3em;
@@ -37,36 +90,78 @@
 	
 #featured-photostories ul p {
 	margin-top: 0.5em;
-	height: 6em;
+	height: 4.5em;
 	text-overflow: ellipsis;
-// 	overflow:hidden; 
+ 	overflow: hidden; 
 	// border:1px solid #000000;
+}	
+
+#explore #countries {
+	width: $image-width;
+	margin-left: $half-gutter;
+	margin-right: $half-gutter;
+	float: left;	
 }
 
 
-	
-footer section {
-	width: 20%;
-	padding-right: 2.5%;
-	padding-left: 2.5%;
-	display: block;
-	float: left;
-	vertical-align: top;		
+#explore #keywords {
+	width: $image-width*2+$gutter;  // two columns so 228 x 2 + extra gutter 29x2 
+	margin-left: $half-gutter;
+	margin-right: $half-gutter;
+	float: left;	
 }
 
 
-footer {
-	padding-bottom: 25px;
+
+// elsewhere layout for big screens
+
+
+$elsewhere-item-width: 3*$basic-grid-unit;  // elsewhere items similar
+
+.elsewhere-item {background-color: grey} // debug
+
+
+#elsewhere h1, #elsewhere h4 {
+	margin-left: $half-gutter;
 }
 
 
 .elsewhere-item {
-	width: 20%;
-	padding-right: 2.5%;
-	padding-left: 2.5%;
+	width: $elsewhere-item-width;  // three of the four mythic units of a thumnail
+	padding-right: $gutter/4;   // width of item is 3/4ths so gutter in proportion is 3/4ths, composed of normal left half (from margin right) and quarter sized left half (from margin-right)
+	padding-left: $half-gutter;
 }
 
 
+.elsewhere-item time {
+	width: $elsewhere-item-width;
+	text-align: right;
+}
+
+
+// footer layout for big screens
+
+
+
+footer {
+	padding-bottom: 2em;
+}
+
+#footer-container {
+	// border: 1px solid black;
+	// background: pink;
+	width: 14/16*100%;
+	margin-left:  3.125%;
+}
+
+footer section {
+	width: $basic-grid-unit*3;
+	padding-right: $gutter/4;   // width of item is 3/4ths so gutter in proportion is 3/4ths, composed of normal left half (from margin right) and quarter sized left half (from margin-right)
+	padding-left: $half-gutter;
+	display: block;
+	float: left;
+	vertical-align: top;		
+}
 
 
 
