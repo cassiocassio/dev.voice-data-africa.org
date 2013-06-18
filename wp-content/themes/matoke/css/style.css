@@ -469,7 +469,7 @@ table {
 
 /* The basic canvas */
 html {
-  background-color: #cccccc; }
+  background-color: #ddffdd; }
 
 #page-frame {
   background-color: white;
@@ -540,11 +540,13 @@ p, dd {
 /* Buttons, calls to action */
 .button {
   display: inline;
+  font-size: 0.7em;
+  font-family: "Helvetica";
   font-weight: 600;
   background-color: #32e382;
   border-radius: 6px;
   padding: 0.25em 0.85em;
-  margin: 0 0.25em;
+  margin: 0 0.25em 0 29px;
   white-space: nowrap; }
 
 a.button {
@@ -576,10 +578,10 @@ section#featured-photostories, section#elsewhere, footer {
 /* lead story is considered part of the header */
 header h1 {
   text-indent: -5000px;
-  background: url("../img/vda-logo-black-and-white-large@2x.png") no-repeat;
-  background-size: 379px 41px;
-  width: 379px;
-  height: 41px; }
+  background: url("../img/vda-logo@2x.png") no-repeat;
+  background-size: 225px 65px;
+  width: 225px;
+  height: 65px; }
 
 header h2 {
   background-color: #f6f671;
@@ -687,7 +689,7 @@ footer h1 {
 
 @media screen and (max-width: 768px) {
   html {
-    background-color: #cccccc;
+    background-color: #ddffdd;
     /* rgba(247,217,248,0.96) pale pink to show the phone stylesheet is in action */ }
 
   #featured-photostories h3 {
@@ -714,7 +716,7 @@ footer h1 {
   /* end phones only media */ }
 @media screen and (min-width: 768px) {
   html {
-    background-color: #dfeaf4;
+    background-color: #f8fff8;
     /* pale blue to show the tablet stylesheet is in action */ }
 
   #credit-author {
@@ -729,15 +731,6 @@ footer h1 {
   header p {
     float: right;
     text-align: right; }
-
-  h1 {
-    width: 290px;
-    background-color: pink;
-    float: left; }
-
-  .call-to-action {
-    float: right;
-    background-color: gray; }
 
   .heading-button-group {
     vertical-align: top;

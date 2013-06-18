@@ -3,7 +3,7 @@
 @media screen and (min-width:768px) {
 
 	html {
-		background-color: #dfeaf4; /* pale blue to show the tablet stylesheet is in action */
+		background-color: #f8fff8; /* pale blue to show the tablet stylesheet is in action */
 		}
 
 #credit-author {	 
@@ -35,13 +35,10 @@ header p {
 }
 
 h1 {
-	width: 5*$basic-grid-unit;
-	background-color: pink;
-	float: left;
 }
 
-.call-to-action { 	float: right;
-	background-color: gray;
+.call-to-action {
+	//background-color: gray;
 }
 .heading-button-group {
 	vertical-align: top;
@@ -131,7 +128,9 @@ section#featured-photostories ul, #featured-photostories li {
 // elsewhere layout for big screens
 
 
-$elsewhere-item-width: 3*$basic-grid-unit;  // elsewhere items similar
+$elsewhere-item-width: 3*$basic-grid-unit;  	// elsewhere items similar
+												// ALSO HAVE TO MANAALLY UPDATE THE JAVASCRIPT FOR THE MASONY GRID
+												// 
 
 // .elsewhere-item {background-color: #aec0c9} // debug
 

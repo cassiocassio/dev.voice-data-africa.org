@@ -1,5 +1,5 @@
 $paper: white;  			// the page
-$desk: #ccc;				// what it sits on
+$desk: #ddffdd;				// what it sits on
 
 $ink: 			#333;		// nearly black
 $ink-strong:	#000;		// actually black
@@ -23,7 +23,7 @@ $content-width-percent: 88.852988691438%;
 // was 88.852988691438
 
 
-$basic-grid-unit: 58px;
+$basic-grid-unit: 58px;   // has been 58 for a while
 
 $gutter: $basic-grid-unit;  				// gutter inherits, could change
 $half-gutter: $gutter/2;					// gutter made from half on left and half on right

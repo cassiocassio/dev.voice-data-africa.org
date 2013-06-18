@@ -22,7 +22,7 @@
 			$('.ellipsis').dotdotdot();
 			$('#elsewhere-container').masonry({
             	itemSelector : '.elsewhere-item',
-				columnWidth : 217,
+				columnWidth : 217,   // 3.75, three and three quarters times $basic-grid-unit (58px, but defined in line 26 of base.scss
 				gutterWidth: 1
           });
 		});	
@@ -78,11 +78,10 @@
 	</section>
 	
 	<section id="featured-photostories">
-			<h1>Photostories</h1>
-			<div class="heading-button-group">
-				<p class="call-to-action"><a href="#" class="button">View All Stories</a>archives by date</p>
-		</div>
-		<br>
+			<h1>Photostories  <a href="#" class="button">View All Stories</a></h1>
+								
+
+			
 		<ul>
 			<li>
 				<a href="#">
@@ -142,7 +141,7 @@
 				</a>
 				<p  class="ellipsis">NairoBits Trust is a youth based organization that uses ICT multimedia creatively to improve the lives of less privileged children and youth from the non-formal settlement.</p>
 			</li>
-		</ul>					
+		</ul>
 	</section>
 	
 	<section id="explore" class="cf">
@@ -181,9 +180,9 @@
 	</section>
 		
 	<section id="elsewhere" class="cf">
-		<a href="#">
-			<h1>Elsewhere as sections</h1>
-			<h4>View all 154 links from the research scrapbook...</h4>
+		
+			<h1>Elsewhere <a href="#" class="button">Link Archive</a></h1>
+			<h4>Research scrapbook</h4>
 		</a>
 		<div class="js-masonry" id="elsewhere-container"> 
 			<div class="elsewhere-item">
