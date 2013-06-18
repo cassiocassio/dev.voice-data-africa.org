@@ -22,6 +22,7 @@ $query = new WP_Query( $args);
 		while ( $query->have_posts() ) {
 			$query->the_post();
 			$post_type=get_post_type($post);
+			echo ( '<em>' . $post_type . '</em>' ); 
 			if  ($post_type == 'post') { get_template_part( 'snippet', $post_type ); 
 			}
 		}
@@ -53,6 +54,7 @@ $query = new WP_Query( $args);
 		while ( $query->have_posts() ) {
 			$query->the_post();
 			$post_type=get_post_type($post);
+			echo ( $post_type ); 
 			if  ($post_type == 'bookmark') { get_template_part( 'snippet', $post_type ); 
 			}
 		}
@@ -62,7 +64,15 @@ $query = new WP_Query( $args);
 	/* Restore original Post Data */
 	wp_reset_postdata();
 	
+	
+
+
+
+echo ( 'done listing bookmarks' );
+
+
 ?>
+
 
 		</div><!-- #content -->
 	</div><!-- #primary -->

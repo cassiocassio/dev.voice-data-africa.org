@@ -17,4 +17,3 @@ might be necessary for links to continue in the future
 
 http://aaron.pk/bookmarks/about/
 
-		<!-- *** added flyhead via The Subtitle plugin from http://www.to-wonder.com/the-subtitle/ -->

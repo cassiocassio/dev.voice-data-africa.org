@@ -19,7 +19,7 @@ BEGINING CONTENT-POST
 	<?php the_post_thumbnail(homepage-thumb); ?>
 	
 	<div class="entry-content">
-		<?php the_excerpt(); ?>
+		THE_EXCERT<?php the_excerpt(); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 	

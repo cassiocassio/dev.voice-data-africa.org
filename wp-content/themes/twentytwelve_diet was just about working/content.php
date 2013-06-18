@@ -6,19 +6,20 @@
 */
 ?>
 
-<!-- CALLED BY SINGLE.PHP TO DISPLAY THE CONTENT OF A SINGLE ARTICLE -->
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+BEGIN CONTENT PHP
 	<header class="entry-header">
 		<?php if ( is_single() ) : ?>
+		IS SINGLE IS TRUE
 		
-<!-- SINGLE POST -->
+		<!-- *** added flyhead via The Subtitle plugin from http://www.to-wonder.com/the-subtitle/ -->
 		<h2 class="flyhead"><?php the_subtitle() ?></h2>  
 		<h1 class="entry-title-"><?php the_title() ?></h1>
 		
+		
 		<?php else : ?>
 		
-<!-- IS NOT SINGLE - SO MUST BE INDEX, ARCHIVE OR SEARCH -->
+		IS NOT SINGLE - SO MUST BE INDEX, ARCHIVE OR SEARCH
 		<h2 class="flyhead">flyhead: <?php the_subtitle() ?></h2>
 		<h1 class="entry-title">
 			<a href="<?php the_permalink(); ?> rel="bookmark">
@@ -33,21 +34,29 @@
 		</h1>
 		<?php endif; // is_single() ?>
 		
-<!-- COMMENTS WOULD BE HERE -->
+COMMENTS WOULD BE HERE
 		
 	</header>
 
 	<!-- ### so now the body -->
  
-<div class="entry-content">
+	<!-- dont need dont want in single posts but will need in search results <div class="entry-summary"><?php the_excerpt(); ?></div><!-- .entry-summary --> 
+	<div class="entry-content">
 	
+	<!-- ### PROBABLY NEED TO CHANGE THIS -->
+	BEGIN THE CONTENT
 	<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentytwelve' ) ); ?>
+	END THE CONTENT
 	
 	<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
 </div><!-- .entry-content -->
 
+
 	<footer class="entry-meta">
 		<?php edit_post_link( __( 'Edit', 'twentytwelve' ), '<span class="edit-link">', '</span>' ); ?>		
-		<!-- author stuff was here, but only me -->
+<!-- 		 all the author stuff was here, but only me -->
+	
 	</footer>
+
 </article><!-- #post -->
+END CONTENT PHP
