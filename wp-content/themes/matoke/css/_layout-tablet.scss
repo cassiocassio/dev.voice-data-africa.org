@@ -22,6 +22,7 @@
 
 #lead-story img, #masthead  {
 	width: $content-width-percent;
+	max-width: $main-image-max-width;
 	margin-left: 3.125%;  // 8.198707592892% left margin for big image
 	padding-left: $half-gutter;
 }
@@ -31,6 +32,20 @@ header p {
 //	border: 1px black solid;
 	text-align: right;
 	// margin-right: 2.952%;	// aligns to right hand of big image.
+}
+
+h1 {
+	width: 5*$basic-grid-unit;
+	background-color: pink;
+	float: left;
+}
+
+.call-to-action { 	float: right;
+	background-color: gray;
+}
+.heading-button-group {
+	vertical-align: top;
+	width: 2*$image-width+2*$gutter;
 }
 
 #lead-story-text-group {
@@ -61,12 +76,12 @@ section#featured-photostories ul, #featured-photostories li {
 //	 background-color: pink;
 }
 
-#featured-photostories h1 {
+#featured-photostories h1, #elsewhere h1, #elsewhere h4 {
 	margin-left: 3.125%;
 	padding-left: $half-gutter;
 }
 
- #explore h1 {
+#explore h1 {
 	margin-left: $half-gutter;}     /*  needs to match the li marginleft  */
 
 #featured-photostories ul, #explore, #elsewhere-container  
@@ -82,7 +97,7 @@ section#featured-photostories ul, #featured-photostories li {
 	margin-left: $half-gutter;
 	margin-right: $half-gutter;  // was 58px on the right but now on both sides
 	margin-bottom: 1em;
-//	border: 1px grey solid;
+	// border: 1px grey solid;
 }
 #featured-photostories h2 {
 	margin-bottom: 0.3em;
@@ -118,13 +133,7 @@ section#featured-photostories ul, #featured-photostories li {
 
 $elsewhere-item-width: 3*$basic-grid-unit;  // elsewhere items similar
 
-.elsewhere-item {background-color: grey} // debug
-
-
-#elsewhere h1, #elsewhere h4 {
-	margin-left: $half-gutter;
-}
-
+// .elsewhere-item {background-color: #aec0c9} // debug
 
 .elsewhere-item {
 	width: $elsewhere-item-width;  // three of the four mythic units of a thumnail

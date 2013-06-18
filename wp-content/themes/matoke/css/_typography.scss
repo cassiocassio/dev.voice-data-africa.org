@@ -7,8 +7,8 @@ html {
 #page-frame {
 	background-color: $paper;
 	border: 1px solid $ink-weakest;
-	width: 98%;  // was 96%
-	margin: 0 auto;
+	width: 96%;  // was 96%, then 98
+	margin: 1em auto;
 	overflow: hidden;
     -webkit-box-shadow:  2px 2px 3px #77777; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
     box-shadow:  2px 2px 3px #77777; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
@@ -80,8 +80,27 @@ p, dd 	{
 	color: $ink-weak;
 	}
 	
+/* Buttons, calls to action */	
 	
-	
+.button {
+  	display: inline;
+  	font-weight: 600;
+ 	background-color: lighten($cool,20);
+ 	border-radius: 6px;
+ 	padding: 0.25em 0.85em;
+ 	margin: 0 0.25em;
+ 	white-space: nowrap;
+}
+
+a.button {
+ 	color: $paper;
+}
+a.button:hover {
+ 	background-color: lighten($cool,10);
+	}	
+a.button:active {
+ 	background-color: $cool;
+	}		
 
 /* Masthead */
 
@@ -91,6 +110,7 @@ p, dd 	{
 // 	border: 1px solid red;
 	float: left;
 	margin-bottom: 10px;
+	margin-top: -0em;
 	}
 
 #credit-author {	 
@@ -120,15 +140,17 @@ section#featured-photostories {
 
 header h1 {
 	text-indent: -5000px;
-	background: url( '../img/vda-logo@2x.png' ) no-repeat;
-	background-size: 225px 58px;  // downsample for retina from hi-dpi asset
-	width: 225px;
-	height: 58px;
+	// 	PREVIOUSLY background: url( '../img/vda-logo@2x.png' ) no-repeat;
+
+	background: url( '../img/vda-logo-black-and-white-large@2x.png' ) no-repeat;
+	background-size: 379px 41px;  // downsample for retina from hi-dpi asset
+	width: 379px;
+	height: 41px;
 	}
 	
 	
 header h2 {
-	background-color: yellow;
+	background-color: #f6f671;
 	padding-top: 0.2em;
 	padding-bottom: 0.2em;
 	padding-left: 0px;
@@ -205,35 +227,31 @@ footer p {
 
 // dls used to mark up elsewhere items		
 
-dt a:link  		{color: $ink-strong}
-dt a:hover 		{color: $ink-weak}
-dt a:visited 	{color: $ink}
-
-
-dd  a:link		{color: $hot;}
-dd  a:visited  	{color: lighten($hot, 10%)}
-dd  a:hover 	{color: darken($hot, 10%)}
-dd	a:active {
-	background: $hot;
-	color: $paper;
-	}  		
-
-
 #elsewhere {
 	background: $paper-elsewhere;
 }
 
-dt {
+.elsewhere-item h2 {
 	font-weight: 400;
 	font-size: 0.9em;
 	}
 	
+.elsewhere-item h2 a:link  		{color: $ink-strong}
+.elsewhere-item h2 a:hover 		{color: $ink-weak}
+.elsewhere-item h2 a:visited 	{color: $ink}
 
+
+.elsewhere-item h3 a:link		{color: $hot;}
+.elsewhere-item h3 a:visited  	{color: lighten($hot, 10%)}
+.elsewhere-item h3 a:hover 	{color: darken($hot, 10%)}
+.elsewhere-item h3 a:active {
+	background: $hot;
+	color: $paper;
+	}  		
 
 .elsewhere-item time {
 	float: right;
 	}
-
 
 .elsewhere-item {
 	// display: inline-block;

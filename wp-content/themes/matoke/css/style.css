@@ -474,8 +474,8 @@ html {
 #page-frame {
   background-color: white;
   border: 1px solid #bababa;
-  width: 98%;
-  margin: 0 auto;
+  width: 96%;
+  margin: 1em auto;
   overflow: hidden;
   -webkit-box-shadow: 2px 2px 3px #77777;
   /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
@@ -537,11 +537,31 @@ p, dd {
   margin: 0 0 0.5em 0;
   color: #666666; }
 
+/* Buttons, calls to action */
+.button {
+  display: inline;
+  font-weight: 600;
+  background-color: #32e382;
+  border-radius: 6px;
+  padding: 0.25em 0.85em;
+  margin: 0 0.25em;
+  white-space: nowrap; }
+
+a.button {
+  color: white; }
+
+a.button:hover {
+  background-color: #1bc769; }
+
+a.button:active {
+  background-color: #159a51; }
+
 /* Masthead */
 #masthead {
   display: block;
   float: left;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  margin-top: -0em; }
 
 #credit-author {
   font-size: 0.7em;
@@ -556,13 +576,13 @@ section#featured-photostories, section#elsewhere, footer {
 /* lead story is considered part of the header */
 header h1 {
   text-indent: -5000px;
-  background: url("../img/vda-logo@2x.png") no-repeat;
-  background-size: 225px 58px;
-  width: 225px;
-  height: 58px; }
+  background: url("../img/vda-logo-black-and-white-large@2x.png") no-repeat;
+  background-size: 379px 41px;
+  width: 379px;
+  height: 41px; }
 
 header h2 {
-  background-color: yellow;
+  background-color: #f6f671;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
   padding-left: 0px;
@@ -613,34 +633,34 @@ small, time {
 footer p {
   line-height: 1.3; }
 
-dt a:link {
-  color: black; }
-
-dt a:hover {
-  color: #666666; }
-
-dt a:visited {
-  color: #333333; }
-
-dd a:link {
-  color: #e10202; }
-
-dd a:visited {
-  color: #fd1919; }
-
-dd a:hover {
-  color: #ae0202; }
-
-dd a:active {
-  background: #e10202;
-  color: white; }
-
 #elsewhere {
   background: #e9fef2; }
 
-dt {
+.elsewhere-item h2 {
   font-weight: 400;
   font-size: 0.9em; }
+
+.elsewhere-item h2 a:link {
+  color: black; }
+
+.elsewhere-item h2 a:hover {
+  color: #666666; }
+
+.elsewhere-item h2 a:visited {
+  color: #333333; }
+
+.elsewhere-item h3 a:link {
+  color: #e10202; }
+
+.elsewhere-item h3 a:visited {
+  color: #fd1919; }
+
+.elsewhere-item h3 a:hover {
+  color: #ae0202; }
+
+.elsewhere-item h3 a:active {
+  background: #e10202;
+  color: white; }
 
 .elsewhere-item time {
   float: right; }
@@ -702,12 +722,26 @@ footer h1 {
 
   #lead-story img, #masthead {
     width: 88.85299%;
+    max-width: 1408px;
     margin-left: 3.125%;
     padding-left: 29px; }
 
   header p {
     float: right;
     text-align: right; }
+
+  h1 {
+    width: 290px;
+    background-color: pink;
+    float: left; }
+
+  .call-to-action {
+    float: right;
+    background-color: gray; }
+
+  .heading-button-group {
+    vertical-align: top;
+    width: 580px; }
 
   #lead-story-text-group {
     margin-top: 1em;
@@ -719,7 +753,7 @@ footer h1 {
     float: left;
     vertical-align: top; }
 
-  #featured-photostories h1 {
+  #featured-photostories h1, #elsewhere h1, #elsewhere h4 {
     margin-left: 3.125%;
     padding-left: 29px; }
 
@@ -758,12 +792,6 @@ footer h1 {
     margin-left: 29px;
     margin-right: 29px;
     float: left; }
-
-  .elsewhere-item {
-    background-color: grey; }
-
-  #elsewhere h1, #elsewhere h4 {
-    margin-left: 29px; }
 
   .elsewhere-item {
     width: 174px;

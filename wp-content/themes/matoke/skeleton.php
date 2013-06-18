@@ -15,23 +15,26 @@
 
     <link rel="stylesheet" href="css/style.css"> 
    	<script src="js/vendor/jquery-1.8.3.min.js"></script>
-   	<script src="js/vendor/jquery.masonry.min.js"></script>	
+   	<script src="//cdnjs.cloudflare.com/ajax/libs/masonry/2.1.08/jquery.masonry.min.js"></script>	<!-- or local at js/vendor/jquery.masonry.min.js -->
 	<script src="js/vendor/jquery.dotdotdot-1.5.9.min.js"></script>
-	<script  type="text/javascript" language="javascript">
+	<script>
 		$(document).ready(function()   {
-			$(".ellipsis").dotdotdot();
-			$("#elsewhere-container").masonry({
-	    // options
-	    itemSelector : '.elsewhere-item',
-	    columnWidth : 217,
-	    isResizable: true
-		});
-	});	
+			$('.ellipsis').dotdotdot();
+			$('#elsewhere-container').masonry({
+            	itemSelector : '.elsewhere-item',
+				columnWidth : 217,
+				gutterWidth: 1
+          });
+		});	
 	</script>
+	
 <!--     <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
 </head>
 
 <body>
+
+
+
    <!--[if IE]>
     <script src= »
     "http://html5shiv.googlecode.com/svn/trunk/html5.js">
@@ -39,6 +42,9 @@
   <![endif]-->
 
 <div id="page-frame">
+
+
+
 
 	<header>
 		<div id="masthead">
@@ -71,14 +77,13 @@
 				</div>
 	</section>
 	
-	
-	
-
 	<section id="featured-photostories">
-					<h1>Photostories</h1>
+			<h1>Photostories</h1>
+			<div class="heading-button-group">
+				<p class="call-to-action"><a href="#" class="button">View All Stories</a>archives by date</p>
+		</div>
+		<br>
 		<ul>
-
-
 			<li>
 				<a href="#">
 					<h3>Teledensity explosion</h3>
@@ -175,77 +180,92 @@
 		</div>
 	</section>
 		
-		<dl>
-			<dt>This is the term</dt>
-			<dd>This is the definition></dd>
-			
-			<dt><a href="#">as anchors This is the term></a></dt>
-			<dd><a href="#">as anchors This is the definition</a></dd>
-		</dl>
-		
-		
-		
 	<section id="elsewhere" class="cf">
-		<div id="elsewhere-container"> 
-			<a href="#">
-				<h1>Elsewhere as sections</h1>
-				<h4>View all 154 links from the research scrapbook...</h4>
-			</a>
-			<dl>
-			<section class="elsewhere-item">
-				<dt><a href="#">Radio silence in Congo</a></dt>
-				<dd class="shortlink"><a href="#">voa.org/africa</a></dd>
-				<dd>A lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activists.</dd>
+		<a href="#">
+			<h1>Elsewhere as sections</h1>
+			<h4>View all 154 links from the research scrapbook...</h4>
+		</a>
+		<div class="js-masonry" id="elsewhere-container"> 
+			<div class="elsewhere-item">
+				<h2><a href="#">Radio silence in Congo</a></h2>
+				<h3><a href="#">voa.org/africa</a></h3>
+				<p>A lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activists.</p>
 				<time datetime="1905-11-13">13-Nov-2013</time>
-
-			</section>	
+			</div>	
 			
-			<section class="elsewhere-item">
-					<dt><a href="#">Radio silence in Congo</a></dt>
-					<dd class="shortlink"><a href="#">voa.org/africa</a></dd>
-					
-					<dd>A lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activists.
-						A lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activists.
-					</dd>
-					<time datetime="1905-11-13">13-Nov-2013</time>
-			</section>	
-			
-			
-				<section class="elsewhere-item">
-					<dt><a href="#">Radio silence in Congo</a></dt>
-					<dd class="shortlink"><a href="#">voa.org/africa</a></dd>
-					
-					<dd>A lively news magazine show featuring VOA correspondent reports,  activists.</dd>
-					<time datetime="1905-11-13">13-Nov-2013</time>
-			</section>	
-			
-			
-				<section class="elsewhere-item">
-					<dt><a href="#">Radio silence in Congo</a></dt>
-					<dd class="shortlink"><a href="#">voa.org/africa</a></dd>
-				<dd>A lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activistsA lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activists.A lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activists..</dd>
+			<div class="elsewhere-item">
+				<h2><a href="#">Radio silence in Congo</a></h2>
+				<h3><a href="#">voa.org/africa</a></h3>
+				<p>A lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activists.</p>
 				<time datetime="1905-11-13">13-Nov-2013</time>
-			</section>		
+			</div>	
 			
-				<section class="elsewhere-item">
-					<dt><a href="#">Radio silence in Congo</a></dt>
-					<dd class="shortlink"><a href="#">voa.org/africa</a></dd>
-					<dd>A lively news magazine show featuring VOA correspondent reports,  activists.</dd>
+			
+			<div class="elsewhere-item">
+				<h2><a href="#">Radio silence in Congo</a></h2>
+				<h3><a href="#">voa.org/africa</a></h3>
+				<p>A lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activists.</p>
 				<time datetime="1905-11-13">13-Nov-2013</time>
-
-				</section>	
+			</div>
 			
 			
-				<section class="elsewhere-item">
-					<dt><a href="#">Radio silence in Congo</a></dt>
-					<dd class="shortlink"><a href="#">voa.org/africa</a></dd>
-					<dd>A lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activistsA lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activists.A lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activists..</dd>
+			<div class="elsewhere-item">
+				<h2><a href="#">Radio silence in Congo</a></h2>
+				<h3><a href="#">voa.org/africa</a></h3>
+				<p>A lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activists.</p>
 				<time datetime="1905-11-13">13-Nov-2013</time>
-
-				</section>
-			</dl>
-		</div>			
-	</section> <!-- end elsewhere -->
+			</div>				
+			
+			
+			<div class="elsewhere-item">
+				<h2><a href="#">Radio silence in Congo</a></h2>
+				<h3><a href="#">voa.org/africa</a></h3>
+				<p>A lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activists.</p>
+				<p>A lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activists.</p>
+				<p>A lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activists.</p>
+				<time datetime="1905-11-13">13-Nov-2013</time>
+			</div>				
+						
+			<div class="elsewhere-item">
+				<h2><a href="#">Radio silence in Congo</a></h2>
+				<h3><a href="#">voa.org/africa</a></h3>
+				<p>A lively news magals, opposition leaders, NGOs and human rights activists.</p>
+				<time datetime="1905-11-13">13-Nov-2013</time>
+			</div>				
+						
+			<div class="elsewhere-item">
+				<h2><a href="#">Radio silence in Congo</a></h2>
+				<h3><a href="#">voa.org/africa</a></h3>
+				<p>A lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activists.</p>
+				<time datetime="1905-11-13">13-Nov-2013</time>
+			</div>				
+						
+			<div class="elsewhere-item">
+				<h2><a href="#">Radio silence in Congo</a></h2>
+				<h3><a href="#">voa.org/africa</a></h3>
+				<p>A lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activists.</p>
+				<p>A lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activists.</p>
+				<p>A lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activists.</p>
+				<time datetime="1905-11-13">13-Nov-2013</time>
+			</div>				
+						
+			<div class="elsewhere-item">
+				<h2><a href="#">Radio silence in Congo</a></h2>
+				<h3><a href="#">voa.org/africa</a></h3>
+				<p>A lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activists.</p>
+				<time datetime="1905-11-13">13-Nov-2013</time>
+			</div>				
+						
+			<div class="elsewhere-item">
+				<h2><a href="#">Radio silence in Congo</a></h2>
+				<h3><a href="#">voa.org/africa</a></h3>
+				<p>A lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activists.</p>
+				<p>A lively news magazine show featuring VOA correspondent reports, interviews with African officials, opposition leaders, NGOs and human rights activists.</p>
+				<time datetime="1905-11-13">13-Nov-2013</time>
+			</div>				
+		</div>
+	</section>
+						
 		
 	<footer>
 		<div id="footer-container" class="cf"> 
@@ -292,8 +312,8 @@
 						<a href="tel:+234547862807">+234 54 7862807</a>
 					</span>
 					</p>
-				</div>
-			</section>
+				</div> <!-- end elesewhere-container reference by masony -->
+			</section>  <!-- end section for semantics -->
 			
 			
 			
