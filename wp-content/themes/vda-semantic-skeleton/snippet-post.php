@@ -1,6 +1,7 @@
 <?php
 /**
  * The template used for displaying photostory post promos on the homepage  snippet-post.php
+ * Called by "get_template_part( 'snippet', $post_type ); " at line25 of home.php
  *
  * @package WordPress
  * @subpackage Twenty_Twelve
@@ -16,7 +17,7 @@
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 	</header>
 	
-	<?php the_post_thumbnail('homepage-thumb'); ?>
+	<?php the_post_thumbnail('matoke-homepage-thumb'); ?>
 	
 	<div class="entry-content">
 		<?php the_excerpt(); ?>

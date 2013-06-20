@@ -12,9 +12,10 @@ add_theme_support( 'post-thumbnails' );
 if ( function_exists( 'add_theme_support' ) ) {
 	set_post_thumbnail_size( 174, 174 ); // default Post Thumbnail dimensions match with width of the elsewhere columns for when we decide we needed images in this post   
 	
-	add_image_size( 'homepage-thumb', 230, 9999 ); // 230 x 154 used on the homepage photostories grid
-	add_image_size( 'homepage-lead-story', 1408, 9999 ); // as speced in the maxwidth css on the lead story
-}
+	add_image_size( 'matoke-homepage-thumb', 230, 9999 ); // 230 x 154 used on the homepage photostories grid
+	add_image_size( 'matoke-homepage-lead-story', 1408, 9999 ); // as speced in the maxwidth css on the lead story
+	add_image_size( 'matoke-post-full-width-image', 1102, 9999 ); // as speced in the maxwidth css on the lead story
+};
 
 /**
  * Creates a nicely formatted and more specific title element text
@@ -131,9 +132,18 @@ class Tag_List_Widget extends WP_Widget {
 	}
 }
 
+// from http://wp.tutsplus.com/tutorials/theme-development/using-custom-image-sizes-in-your-theme-and-resizing-existing-images-to-the-new-sizes/
+
+add_filter( 'image_size_names_choose', 'custom_image_sizes_choose' );  
+function custom_image_sizes_choose( $sizes ) {  
+    $custom_sizes = array(  
+        'matoke-homepage-thumb' => 'Matoke HomepageThumb',  
+        'matoke-homepage-lead-story' => 'Matoke HomepageLead',  
+        'matoke-post-full-width-image' => 'Matoke Post FullWidth'  
+    );  
+    return array_merge( $sizes, $custom_sizes );  
+};  
 
 
 
-
-
-
+?> 

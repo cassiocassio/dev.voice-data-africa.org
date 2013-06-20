@@ -3,21 +3,20 @@
 <div id="primary" class="site-content">
 		<div id="content" role="main">
 
+<?php // The Query
 
-<?php
-
-// The Query
-
+$sticky = get_option( 'sticky_posts' );
 $args = array(
 	'posts_per_page' => '9',
-	'category_name' => ''
-	
+	'post__in'  => $sticky,
+	'category_name' => '',
+	'ignore_sticky_posts' => 1
 );
-
 
 $query = new WP_Query( $args);
 
-	// The Loop for photostories
+	// The Loop for photostories that are sticky. Only sticky posts are featured on the homepage.
+	
 	if ( $query->have_posts() ) {
 		while ( $query->have_posts() ) {
 			$query->the_post();
@@ -26,14 +25,12 @@ $query = new WP_Query( $args);
 			}
 		}
 	} else {
-		// no posts found
+	// no posts found
 	}
 	/* Restore original Post Data */
 	wp_reset_postdata();
 	
-	
 	echo ( '<hr>' );
-
 
  $args = array(
 	'show_option_all'    => '',
@@ -52,7 +49,7 @@ $query = new WP_Query( $args);
 	'include'            => '',
 	'hierarchical'       => 1,
 	'title_li'           => __( 'Countries' ),
-	'show_option_none'   => __('No categories'),
+	'show_option_none'   => __('No countries'),
 	'number'             => null,
 	'echo'               => 1,
 	'depth'              => 0,
@@ -83,7 +80,7 @@ wp_list_categories( $args);
 	'include'            => '',
 	'hierarchical'       => 1,
 	'title_li'           => __( 'Topics' ),
-	'show_option_none'   => __('No categories'),
+	'show_option_none'   => __('No topics'),
 	'number'             => null,
 	'echo'               => 1,
 	'depth'              => 0,
@@ -99,7 +96,6 @@ wp_list_categories( $args);
 	
 // Custom bookmark post
 
-
 // The Query
 
 $args = array(
@@ -107,10 +103,9 @@ $args = array(
 	'category_name' => ''
 );
 
-
 $query = new WP_Query( $args);
 
-	// The Loop for photostories	
+// The Loop for photostories	
 	if ( $query->have_posts() ) {
 		while ( $query->have_posts() ) {
 			$query->the_post();
@@ -119,10 +114,11 @@ $query = new WP_Query( $args);
 			}
 		}
 	} else {
-		// no posts found
-	}
-	/* Restore original Post Data */
-	wp_reset_postdata();
+// no posts found
+	};
+
+// Restore original Post Data
+//	wp_reset_postdata();
 	
 ?>
 

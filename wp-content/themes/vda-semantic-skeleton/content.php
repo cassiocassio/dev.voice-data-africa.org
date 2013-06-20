@@ -13,41 +13,43 @@
 		<?php if ( is_single() ) : ?>
 		
 <!-- SINGLE POST -->
+IS SINGLE[IN CONTENT.PHP]
 		<h2 class="flyhead"><?php the_subtitle() ?></h2>  
 		<h1 class="entry-title-"><?php the_title() ?></h1>
-		
+	</header>
+	<!-- ### so now the body -->
+		<div class="entry-content">
+		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentytwelve' ) ); ?>
+		<!-- author stuff would be here, but only me -->
+		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
+		</div><!-- .entry-content -->
+		<!-- COMMENTS WOULD BE HERE -->
+
 		<?php else : ?>
 		
 <!-- IS NOT SINGLE - SO MUST BE INDEX, ARCHIVE OR SEARCH -->
-		<h2 class="flyhead">flyhead: <?php the_subtitle() ?></h2>
-		<h1 class="entry-title">
-			<a href="<?php the_permalink(); ?> rel="bookmark">
-				<?php the_title(); ?>
-					
-				<!-- thumbnail is in list of results and is clickable -->
-				<?php the_post_thumbnail('thumbnail', array('class' => 'alignleft',
+IS NOT SINGLE [IN CONTENT.PHP]
+
+<!-- PHOTOSTORY PROMO -->
+		<h2><?php the_subtitle(); ?> </h2>
+		<h1 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+	</header>
+	
+	<?php the_post_thumbnail('matoke-homepage-thumb', array('class' => 'THUMBNAILCLASS-WAS-ALIGNLEFT',st
 			'alt'	=> trim(strip_tags( $wp_postmeta->_wp_attachment_image_alt ))
 			)); ?>
-			
-			</a>
-		</h1>
-		<?php endif; // is_single() ?>
-		
-<!-- COMMENTS WOULD BE HERE -->
-		
-	</header>
+	<div class="entry-content">
+		<?php the_excerpt(); ?>
+	</div><!-- .entry-content -->
+	
+</article><!-- #post -->
 
-	<!-- ### so now the body -->
- 
-<div class="entry-content">
-	
-	<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentytwelve' ) ); ?>
-	
-	<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
-</div><!-- .entry-content -->
+		<?php endif; // is_single() ?>
+</header>
+
 
 	<footer class="entry-meta">
-		<?php edit_post_link( __( 'Edit', 'twentytwelve' ), '<span class="edit-link">', '</span>' ); ?>		
-		<!-- author stuff was here, but only me -->
-	</footer>
+		<?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?>
+	</footer><!-- .entry-meta -->
+
 </article><!-- #post -->
